@@ -17,10 +17,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2  # This action checks out your repository's code
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Adjust the Node.js version as needed
+          node-version: '14  # Adjust the Node.js version as needed
 
       - name: Install dependencies
         run: npm install  # Install project dependencies
