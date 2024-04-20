@@ -18,7 +18,7 @@ jobs:
           node-version: '14'  # Adjust the Node.js version as needed
 
       - name: Install dependencies
-        run: npm install  # Install project dependencies
+        run: npm install -y  # Install project dependencies
 
       - name: Build
         run: npm run build  # Build your Node.js application
